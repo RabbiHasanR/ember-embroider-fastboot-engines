@@ -1,0 +1,34 @@
+{{!-- {{page-title "Index"}} --}}
+
+{{!-- {{log 'model:' this.model}} --}}
+<p>
+  Username:
+  {{this.model.login}}
+</p>
+<p>
+  Avatar:
+  <img src={{this.model.avatar_url}} width="32" height="32" alt="avatar" />
+</p>
+<p>
+  # of Public Repos:
+  {{this.model.public_repos}}
+</p>
+
+<button {{on 'click' this.loadData}} type="button">Load Data</button>
+
+{{#if this.myData}}
+  <h1>My Data</h1>
+
+  <p>
+    Username:
+    {{this.myData.login}}
+  </p>
+  <p>
+    Avatar:
+    <img src={{this.myData.avatar_url}} width="32" height="32" alt="avatar" />
+  </p>
+  <p>
+    # of Public Repos:
+    {{this.myData.public_repos}}
+  </p>
+{{/if}}
