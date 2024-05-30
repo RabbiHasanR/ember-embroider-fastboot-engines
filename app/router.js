@@ -7,5 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
+  // Mounting engines in `/` - Ember Engines
+  // this.mount('super-blog', { path: '/', rootNamespace: false });
   this.mount('super-blog');
 });

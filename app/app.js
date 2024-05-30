@@ -7,6 +7,16 @@ export default class App extends Application {
   modulePrefix = config.modulePrefix;
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver;
+  engines = {
+    'super-blog': {
+      dependencies: {
+        externalRoutes: {
+          application: 'application',
+        },
+        services: [{ 'app-store': 'store' }],
+      },
+    },
+  };
 }
 
 loadInitializers(App, config.modulePrefix);

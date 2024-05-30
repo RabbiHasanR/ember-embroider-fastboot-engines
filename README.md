@@ -54,3 +54,17 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+
+
+
+
+## To generate engine-specific routes, controllers, adapters, serializers, and models in an Ember Engine, CLI command,
+
+* `ember generate route <route-name> --in-repo-addon=<engine-name>`
+* `ember generate component <component-name> -gc --in-repo-addon=<engine-name>`
+* `ember generate controller <controller-name> --in-repo-addon=<engine-name>`
+* `ember generate model <model-name> --in-repo-addon=<engine-name>`
+* `ember generate adapter <adapter-name> --in-repo-addon=<engine-name>`
+* `ember generate serializer <serializer-name> --in-repo-addon=<engine-name>`
+

@@ -1,3 +1,9 @@
 <h1>Ember Engine Super Blog</h1>
-
+<AwesomeSauce/>
+<CustomButton @onClick={{this.navigateWithInEngine}} @label="home" @route="home"/>
+<CustomButton @onClick={{this.navigateToParent}} @label="parent" @route="application"/> 
+{{!-- <CustomButton @onClick={{@goHome}} @label="parent two" @route="application"/>  --}}
+<LinkTo @route="home">Home</LinkTo>
+<LinkTo @route="user">User</LinkTo>
+<LinkToExternal @route="application">Go Parent</LinkToExternal>
 {{outlet}}

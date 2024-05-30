@@ -1,6 +1,9 @@
 {{!-- {{page-title "Index"}} --}}
 
 {{!-- {{log 'model:' this.model}} --}}
+<LinkTo @route="super-blog">
+  Super Blog
+</LinkTo>
 <p>
   Username:
   {{this.model.login}}
@@ -14,7 +17,7 @@
   {{this.model.public_repos}}
 </p>
 
-<button {{on 'click' this.loadData}} type="button">Load Data</button>
+<button {{on "click" this.loadData}} type="button">Load Data</button>
 
 {{#if this.myData}}
   <h1>My Data</h1>
@@ -31,4 +34,5 @@
     # of Public Repos:
     {{this.myData.public_repos}}
   </p>
+
 {{/if}}
