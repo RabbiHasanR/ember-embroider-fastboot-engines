@@ -7,7 +7,7 @@ export default class IndexController extends Controller {
 
   @action
   loadData() {
-    fetch('https://api.github.com/users/RabbiHasanR').then( (response) => {
+    fetch('https://api.github.com/users/RabbiHasanR').then((response) => {
       this.myData = response.json();
     });
   }
